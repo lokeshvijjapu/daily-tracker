@@ -1,0 +1,78 @@
+.app {
+  min-height: 100vh;
+  background-color: #171717;
+  color: #FFFFFF;
+}
+
+.app-header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #2F2F2F;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #9E7FFF, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.streak-display {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #f59e0b;
+}
+
+.app-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.app-nav button {
+  background: #262626;
+  color: #A3A3A3;
+  border: 1px solid #2F2F2F;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.app-nav button:hover {
+  background: #2F2F2F;
+  color: #FFFFFF;
+}
+
+.app-nav button.active {
+  background: #9E7FFF;
+  color: #FFFFFF;
+  border-color: #9E7FFF;
+}
+
+.app-main {
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 2rem;
+  }
+  
+  .app-nav {
+    gap: 5px;
+  }
+  
+  .app-nav button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
